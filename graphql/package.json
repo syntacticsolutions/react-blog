@@ -1,0 +1,25 @@
+{
+  "name": "react-blog-backend",
+  "version": "1.0.0",
+  "description": "A Koa and GraphQL backend for React Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "create-migration": "node ./database/actions/create-migration.js",
+    "run-migration": "node ./database/actions/run-migration.js"
+  },
+  "author": "Miguel Coder",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-koa": "^2.13.0",
+    "bluebird": "^3.7.2",
+    "dotenv": "^8.2.0",
+    "graphql-tools": "^5.0.0",
+    "koa": "^2.11.0",
+    "moment": "^2.25.3"
+  },
+  "devDependencies": {
+    "knex": "^0.21.1",
+    "mysql2": "^2.1.0"
+  }
+}

@@ -1,0 +1,50 @@
+.grid-pagination-container {
+    .ant-pagination {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-gap: 30px;
+    grid-auto-rows: 1fr;
+    padding-bottom: 50px;
+
+    figure {
+        height: 100%;
+        max-height: 280px;
+    }
+
+    img {
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center center;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        max-height: 280px;
+    }
+
+    .post-container {
+        display: flex;
+        flex-direction: column;
+
+        .author-text {
+            color: $text-light;
+        }
+
+        .author-text a {
+            padding: 0 5px;
+        }
+
+        .description-text {
+            font-size: 18px;
+            font-weight: 400px;
+            color: #555;
+        }
+    }
+}

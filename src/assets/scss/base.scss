@@ -1,0 +1,39 @@
+@import './variables';
+@import './navigation';
+@import './home';
+@import './masonry-post';
+@import './post-masonry';
+@import './tag-row';
+@import './post-grid';
+
+
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 4em 20px;
+}
+
+.overlay::before {    
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, transparent 0%, transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%)
+}

@@ -1,0 +1,48 @@
+.masonry-post {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    margin: 0 auto;
+    min-height: 225px;
+
+    .image-text {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .image-title, .image-date, .tags-container, div {
+        float: left;
+        width: 100%;
+        z-index: 10;
+        font-weight: 300;
+    }
+
+    .image-title {
+        font-size: 20px;
+        margin-block-start: 0;
+        margin-block-end: 10px;
+        color: white;
+    }
+
+    .image-date {
+        font-size: 18px;
+        color: $text-light;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .masonry-post {
+        width: 100%;
+        margin: 10px 0;
+        height: 300px;
+    }
+}
