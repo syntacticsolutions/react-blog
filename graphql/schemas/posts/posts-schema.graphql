@@ -1,6 +1,6 @@
 type Query {
     getPostsByType(type: String): [Post]!
-    getPostsByCategory(category_id: Int): [Post]!
+    getPostsByCategories(cat_ids: [Int]): [Post]!
 }
 
 type Post {

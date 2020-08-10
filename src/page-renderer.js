@@ -7,7 +7,7 @@ const generatePage = page => {
         return <Component />;
     } catch (err) {
         console.warn(err)
-        return <React.Fragment>404</React.Fragment>
+        return 'Under Construction'
     }
 }
 
