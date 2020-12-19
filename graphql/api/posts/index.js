@@ -7,7 +7,16 @@ module.exports = {
         await db.select('*')
             .from('blog_posts')
             .where({ id })
+            .andWhere(function() {
+                this.where('active', '=', 1)
+            })
             .catch(errorHandler),
+
+    createPost: async (args) => 
+        await db.insert(args.data)
+            .then(res => {
+                return res?.[0] || 0
+            }),
 
     getPosts: (type, category_ids) => {
         let qry = db.select(

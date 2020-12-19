@@ -13,3 +13,21 @@ export const GET_POSTS_BY_CATEGORIES_QUERY = gql`
         }
     }
 `
+
+export const GET_POST_QUERY = gql`
+    query GetPostQuery($id: ID!) {
+        post: getPost(id: $id) {
+            id
+            author_id
+            title
+            text
+            keyword1
+            keyword2
+            image
+            bg_src
+            bg_type
+            updated_at
+        }
+    }
+`
+

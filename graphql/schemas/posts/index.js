@@ -39,7 +39,11 @@ module.exports = {
             ),
             getPostsByCategories: getPostsWithAuthors(
                 async ({cat_ids}) => await PostService.getPosts('default', cat_ids)
-            )
+            ),
+            getPost: async (parent, args) => PostService.getPost(args.id)
+        },
+        Mutation: {
+            createPost: async (parent, args) => PostService.createPost(args)
         }
     },
     schema: fs.readFileSync(

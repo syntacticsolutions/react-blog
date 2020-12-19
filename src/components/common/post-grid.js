@@ -30,7 +30,7 @@ export default function PostGrid ({posts}) {
                 {paginatedPosts.map((post, index) => (
                     <div className="post-container">
                         <figure>
-                            <Link to={post.link}>
+                            <Link to={`/post/${post?.id}`}>
                                 <img src={require(`../../assets/images/${post.image}`)} alt={post.image}/>
                             </Link>
                         </figure>

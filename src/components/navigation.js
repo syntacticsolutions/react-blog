@@ -5,7 +5,7 @@ import { Avatar } from 'antd';
 const navLinks = [
     {
       title: 'Blog',
-      path: '/blog'
+      path: '/'
     },
     {
       title: 'Web Dev',
@@ -26,6 +26,10 @@ const navLinks = [
     {
       title: 'Login',
       path: '/login'
+    },
+    {
+      title: 'Post Viewer',
+      path: '/post'
     }
   ]
 
