@@ -8,21 +8,38 @@ type Mutation {
     createPost(data: PostInput): ID!
 }
 
-type Post {
-    id: Int,
+input PostInput {
     title: String
+    categories: [String]
+    description: String
+    image: String
+    keyword1: String
+    keyword2: String
+    bg_src: String
+    bg_type: String
+}
+
+type Post {
+    id: Int
+    title: String
+    text: String,
+    keyword1: String
+    keyword2: String
+    bg_src: String
+    bg_type: String
     categories: [String]
     author: String
     description: String
     image: String
     likes: Int
-    comments: [Comment],
+    comments: [Comment]
     updated_at: String
 }
 
 type Comment {
-    id: Int,
-    post_id: Int,
-    author: String,
+    id: Int
+    post_id: Int
+    author: String
     comment: String
+    author_image: String
 }
