@@ -1,4 +1,96 @@
-.post-viewer {
-    padding: 40px;
-    padding-top: 80px;
+.post-viewer-container {
+    position: relative;
+    background: white;
+
+    .ql-toolbar {
+        display: none;
+    }
+
+    .ql-container {
+        border: none;
+
+        .ql-editor {
+            padding: 0;
+        }
+
+        h2, h3, h4, p {
+            max-width: 1000px;
+            margin: auto auto;
+        }
+    }
+
+    .post-intro-container {
+        width: 100vw;
+        height: 80vh;
+        overflow: hidden;
+        background: white;
+
+        figure {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+        }
+
+        img {
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .post-title-container {
+        position: relative;
+        display: flex;
+
+        .title-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1050px;
+            margin: 0 auto;
+            background: white;
+            flex-grow: 1;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 36px;
+
+        }
+
+        p {
+            text-align: left;
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+    }
+
+    .post-content-container {
+        border-radius: 4px;
+        padding-top: 30px;
+        margin: 0 auto;
+        z-index: 1;
+        position: relative;
+        background: white;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 400;
+        }
+        
+        p {
+            line-height: 32px;
+            font-size: 20px;
+        }
+    }
 }

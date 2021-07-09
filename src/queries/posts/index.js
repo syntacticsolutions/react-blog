@@ -18,11 +18,12 @@ export const GET_POST_QUERY = gql`
     query GetPostQuery($id: ID!) {
         post: getPost(id: $id) {
             id
-            author_id
+            author
             title
             text
             keyword1
             keyword2
+            description
             image
             bg_src
             bg_type
