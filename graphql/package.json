@@ -16,7 +16,7 @@
     "dotenv": "^8.2.0",
     "graphql-tools": "^5.0.0",
     "koa": "^2.11.0",
-    "moment": "^2.25.3"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "knex": "^0.21.1",
