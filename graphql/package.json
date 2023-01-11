@@ -19,7 +19,7 @@
     "moment": "^2.25.3"
   },
   "devDependencies": {
-    "knex": "^0.21.1",
+    "knex": "^2.4.0",
     "mysql2": "^2.1.0"
   }
 }
